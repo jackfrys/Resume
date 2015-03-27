@@ -1,0 +1,151 @@
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\usepackage{enumitem}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black 
+    %urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.8in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Jack Frysinger} & % email
+	\\
+	\#8324, 1155 Tremont Street, Roxbury Crossing, MA % phone number
+	\\
+	\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys} \\
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}[leftmargin=*]
+		\item[]
+			\ressubheading{\href{http://www.northeastern.edu}{Northeastern University}}{Boston, MA}{{Bachelor of Science in Computer Science - }{GPA: 3.79}}{Expected May 2018}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Dean's List, Fall 2014}
+					\resitem{University Honors Program}
+					\resitem{Key Courses: Fundamentals I, Discrete Structures, Calculus II}
+				\end{itemize}}
+		\item[]
+			\ressubheading{\href{http://oldsaybrook.k12.ct.us/hs}{Old Saybrook High School}}{Old Saybrook, CT}{{SAT: 2300 - }{GPA: 102.42/100 - Rank: 3/133}}{June 2014}
+			{\footnotesize
+			\begin{itemize}
+				\resitem{National Honor Society, Research trip to Utila, Honduras, 230+ volunteer hours}
+				\resitem{Key Courses: AP Chemistry, AP Computer Science, AP Calculus AB, UConn ECE Physics}
+			\end{itemize}}
+		\item[]
+			\ressubheading{\href{http://coursera.com}{Coursera}}{}{Independent Online Work}{2013 -- 2014}
+				{\footnotesize
+				\begin{itemize}
+					\resitem{\href{https://coursera.org/course/matrix}{Coding the Matrix: Linear Algebra Through Computer Science Applications} - \href{http://brown.edu}{Brown University}, Summer 2013}
+					\resitem{\href{https://coursera.org/course/insidetheinternet}{Internet History, Technology, and Security} - \href{http://umich.edu}{University of Michigan}, Fall 2013}
+					\resitem{\href{https://coursera.org/course/comnetworks}{Computer Networks} - \href{http://uw.edu}{University of Washington}, Winter 2014}
+					\resitem{\href{https://coursera.org/course/interactivepython}{An Introduction to Interactive Programming in Python} - \href{http://rice.edu}{Rice University}, Spring 2014}
+				\end{itemize}}
+	\end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+	\begin{itemize}[leftmargin=*]
+		\item[] 
+			\ressubheading{\href{http://www.uscga.edu}{United States Coast Guard Academy}}{New London, CT}
+				{Software Developer}{June 2014 -- August 2014}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Developed software to automate scientific instrument control, including analog/digital I/O, thermocouple sensors, valves, and gas flow controllers}
+					\resitem{Employed Python 3.4 for development and the Tkinter package for user interface design}
+					\resitem{Gained deeper understanding of object-oriented programming}
+				\end{itemize}
+				}
+		\item[]
+			\ressubheading{\href{http://www.oldsaybrook.k12.ct.us}{Old Saybrook Public Schools} District Technology Committee}{Old Saybrook, CT}
+				{Student Representative}{December 2011 --  June 2014}
+				{\footnotesize
+				\begin{itemize}
+					\resitem{Provided student perspective to administrative committee tasked with deploying technology services and products to faculty and students in the K-12 school district}
+					\resitem{Researched relevant services and products (e.g. \href{https://www.google.com/work/apps/education/}{Google Apps for Education}, \href{http://www.apple.com/education/it/vpp/}{Apple Volume Purchase Program}) and prepared to answer administrators' questions}
+					\resitem{Advocated for faculty and student needs}
+				\end{itemize}}
+		\item[]
+			\ressubheading{Technology Tutorials for Seniors}{Old Saybrook, CT}
+				{Technology Tutor}{Summer of 2012 \& 2013}
+				{\footnotesize 
+				\begin{itemize}
+					\resitem{Attended and helped coordinate weekly sessions for two summers}
+					\resitem{Met with senior citizens to troubleshoot and explore their tech devices}
+					\resitem{Improved technical dexterity among local senior citizens}
+				\end{itemize}}
+		\item[]
+			\ressubheading{Little League Baseball and Softball}{Old Saybrook / Old Lyme, CT}
+						{Baseball and Softball Officiator}{April 2009 -- June 2014}
+				{\footnotesize
+				\begin{itemize}
+					\resitem{Facilitated timely, safe, and rule-abiding gameplay}
+					\resitem{Settled disputes among players and coaches}
+				\end{itemize}}
+	\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Extracurricular Activities and Interests}
+	\begin{description}
+		\item[Journalism and Writing:] { \footnotesize Editor of high school newspaper and literary magazine; attended \href{http://yaledailynews.com/about-us/sjp/}{Yale Daily News Summer Journalism Program}, August 2013; received \href{http://www.brown.edu/campus-life/support/bookstore/book-award}{Brown University Book Award}, May 2013}
+		\item[Music:] { \footnotesize Played in high school jazz band and musical pit band (saxophone)}
+		\item[Scouting:] {\footnotesize Eagle Scout, September 2013; active member of the \href{http://www.scouting.org}{Boy Scouts of America}, 2007 -- 2014}
+		\item[Hackathons:] {\footnotesize \href{http://hackbeanpot.com}{Hack Beanpot}, won \emph{Most Fun Idea} prize, February 2015; \href{http://globalgamejam.org/2014/jam-sites/boston-ggj-northeastern-university}{Boston Global Game Jam at Northeastern University}, January 2015; \href{http://hackingmedicine.mit.edu/upcoming-events/mgh-samsung/}{MIT Hacking Medicine @ MGH-Samsung}, November 2014; \href{http://www.northeastern.edu/careers/employers/microsoft-coding-competition/}{Microsoft Coding Competition}, October 2014}
+		
+	\end{description} % End Extracurriculars list
+	
+\resheading{Skills}
+	\begin{description}
+		\item[Software:] {\footnotesize OS X, Windows, Microsoft Office, Apple iWork, Adobe InDesign, Git source control}
+		\item[Programming/Markup Languages:] {\footnotesize \textbf{Proficient} - Python \enspace \textbf{Learning} - Java, HTML/CSS, JavaScript/jQuery, Ruby, \LaTeX, Objective-C, Swift, Bash Unix shell}
+	
+	\end{description}
+
+\end{document}
