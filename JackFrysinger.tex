@@ -37,7 +37,7 @@
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.8in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
+		\emph{#3} & \emph{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
 \newcommand{\ressubsubheading}[2]{
@@ -50,9 +50,9 @@
 
 \newcommand{\mywebheader}{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\LARGE Jack Frysinger} & % email
+	\textbf{\LARGE Jack Frysinger}
 	\\
-	\#8324, 1155 Tremont Street, Roxbury Crossing, MA & % phone number
+	\#4808, 480 Rear Parker Street, Boston, MA
 	\\
 	\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys} \\
 	\end{tabular*}
@@ -65,29 +65,20 @@
 \resheading{Education}
 	\begin{itemize}[leftmargin=*]
 		\item[]
-			\ressubheading{\href{http://www.northeastern.edu}{Northeastern University}}{Boston, MA}{{Bachelor of Science in Computer Science - }{GPA: 3.79}}{Expected May 2018}
+			\ressubheading{\href{http://www.northeastern.edu}{Northeastern University}}{Boston, MA}{{Bachelor of Science in Computer Science - }{GPA: 3.83}}{Expected May 2018}
 				{ \footnotesize
 				\begin{itemize}
-					\resitem{Dean's List, Fall 2014}
+					\resitem{Dean's List - Fall 2014, Spring 2015}
 					\resitem{University Honors Program}
-					\resitem{Key Courses: Fundamentals I, Discrete Structures, Calculus II}
+					\resitem{Key Courses: Fundamentals I \& II, Object-Oriented Design, Discrete Structures, Logic and Computation, Algorithms and Data, Linear Algebra}
 				\end{itemize}}
 		\item[]
-			\ressubheading{\href{http://oldsaybrook.k12.ct.us/hs}{Old Saybrook High School}}{Old Saybrook, CT}{{SAT: 2300 - }{GPA: 102.42/100 - Rank: 3/133}}{June 2014}
+			\ressubheading{\href{http://www.oldsaybrookschools.org/page.cfm?p=605}{Old Saybrook High School}}{Old Saybrook, CT}{{SAT: 2300 - }{GPA: 102.42/100 - Rank: 3/133}}{June 2014}
 			{\footnotesize
 			\begin{itemize}
-				\resitem{National Honor Society, Research trip to Utila, Honduras, 230+ volunteer hours}
-				\resitem{Key Courses: AP Chemistry, AP Computer Science, AP Calculus AB, UConn ECE Physics}
+				\resitem{National Honor Society, Marine biology research trip to Utila, Honduras, 230+ volunteer hours}
+				\resitem{Key Courses: AP Chemistry, AP Computer Science, AP Calculus AB, University of Connecticut ECE General Physics}
 			\end{itemize}}
-		\item[]
-			\ressubheading{\href{http://coursera.com}{Coursera}}{}{Independent Online Work}{2013 -- 2014}
-				{\footnotesize
-				\begin{itemize}
-					\resitem{\href{https://coursera.org/course/matrix}{Coding the Matrix: Linear Algebra Through Computer Science Applications} - \href{http://brown.edu}{Brown University}, Summer 2013}
-					\resitem{\href{https://coursera.org/course/insidetheinternet}{Internet History, Technology, and Security} - \href{http://umich.edu}{University of Michigan}, Fall 2013}
-					\resitem{\href{https://coursera.org/course/comnetworks}{Computer Networks} - \href{http://uw.edu}{University of Washington}, Winter 2014}
-					\resitem{\href{https://coursera.org/course/interactivepython}{An Introduction to Interactive Programming in Python} - \href{http://rice.edu}{Rice University}, Spring 2014}
-				\end{itemize}}
 	\end{itemize} % End Education list
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -100,11 +91,11 @@
 				\begin{itemize}
 					\resitem{Developed software to automate scientific instrument control, including analog/digital I/O, thermocouple sensors, valves, and gas flow controllers}
 					\resitem{Employed Python 3.4 for development and the Tkinter package for user interface design}
-					\resitem{Gained deeper understanding of object-oriented programming}
+					\resitem{Integrated object-oriented programming and chemical research}
 				\end{itemize}
 				}
 		\item[]
-			\ressubheading{\href{http://www.oldsaybrook.k12.ct.us}{Old Saybrook Public Schools} District Technology Committee}{Old Saybrook, CT}
+			\ressubheading{\href{http://www.oldsaybrookschools.org}{Old Saybrook Public Schools} District Technology Committee}{Old Saybrook, CT}
 				{Student Representative}{December 2011 --  June 2014}
 				{\footnotesize
 				\begin{itemize}
@@ -112,6 +103,15 @@
 					\resitem{Researched relevant services and products (e.g. \href{https://www.google.com/work/apps/education/}{Google Apps for Education}, \href{http://www.apple.com/education/it/vpp/}{Apple Volume Purchase Program}) and prepared to answer administrators' questions}
 					\resitem{Advocated for faculty and student needs}
 				\end{itemize}}
+		\item[]
+		\ressubheading{\href{http://coursera.com}{Coursera}}{}{Independent Online Work}{2013 -- 2014}
+		{\footnotesize
+			\begin{itemize}
+				\resitem{\href{https://coursera.org/course/matrix}{Coding the Matrix: Linear Algebra Through Computer Science Applications} - \href{http://brown.edu}{Brown University}, Summer 2013}
+				\resitem{\href{https://coursera.org/course/insidetheinternet}{Internet History, Technology, and Security} - \href{http://umich.edu}{University of Michigan}, Fall 2013}
+				\resitem{\href{https://coursera.org/course/comnetworks}{Computer Networks} - \href{http://uw.edu}{University of Washington}, Winter 2014}
+				\resitem{\href{https://coursera.org/course/interactivepython}{An Introduction to Interactive Programming in Python} - \href{http://rice.edu}{Rice University}, Spring 2014}
+			\end{itemize}}
 		\item[]
 			\ressubheading{Technology Tutorials for Seniors}{Old Saybrook, CT}
 				{Technology Tutor}{Summer of 2012 \& 2013}
@@ -133,8 +133,8 @@
 	
 \resheading{Skills}
 	\begin{description}
-		\item[Software:] {\footnotesize OS X, Windows, Microsoft Office, Apple iWork, Adobe InDesign, Git source control}
-		\item[Programming/Markup Languages:] {\footnotesize \textbf{Proficient} - Python (2 years), Java (3 years) \enspace \textbf{Learning} - Swift, HTML/CSS, JavaScript/jQuery, \LaTeX, Objective-C}
+		\item[Software:] {\footnotesize OS X, Windows, Microsoft Office, Apple iWork, Adobe InDesign, Git source control, \LaTeX}
+		\item[Programming/Markup Languages:] {\footnotesize \textbf{Proficient} - Python (2 years), Java (3 years) \enspace \textbf{Learning} - Swift, HTML/CSS, JavaScript/jQuery, Objective-C}
 	
 	\end{description}
 
@@ -142,7 +142,7 @@
 \resheading{Extracurricular Activities and Interests}
 	\begin{description}
 		\item[Journalism and Writing:] { \footnotesize Editor of high school newspaper and literary magazine; attended \href{http://yaledailynews.com/about-us/sjp/}{Yale Daily News Summer Journalism Program}, August 2013; received \href{http://www.brown.edu/campus-life/support/bookstore/book-award}{Brown University Book Award}, May 2013}
-		\item[Music:] { \footnotesize Played in high school jazz band and musical pit band (saxophone)}
+		\item[Music:] { \footnotesize Played saxophone in high school jazz band, concert band, and musical pit band}
 		\item[Scouting:] {\footnotesize Eagle Scout, September 2013; active member of the \href{http://www.scouting.org}{Boy Scouts of America}, 2007 -- 2014}
 		\item[Hackathons:] {\footnotesize \href{http://hackbeanpot.com}{Hack Beanpot}, won \emph{Most Fun Idea} prize, February 2015; \href{http://globalgamejam.org/2014/jam-sites/boston-ggj-northeastern-university}{Boston Global Game Jam at Northeastern University}, January 2015; \href{http://hackingmedicine.mit.edu/upcoming-events/mgh-samsung/}{MIT Hacking Medicine @ MGH-Samsung}, November 2014; \href{http://www.northeastern.edu/careers/employers/microsoft-coding-competition/}{Microsoft Coding Competition}, October 2014}
 		
