@@ -1,6 +1,5 @@
 \documentclass[letterpaper,10.6pt]{article}
 
-%-----------------------------------------------------------
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage[usenames,dvipsnames]{color}
@@ -9,14 +8,12 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \hypersetup{
-    colorlinks,%
-    citecolor=black,%
-    filecolor=black,%
-    linkcolor=black,%
-    urlcolor=black 
-    %urlcolor=mygreylink     % can put red here to better visualize the links
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
 }
-\urlstyle{same}
 \definecolor{mygrey}{gray}{.85}
 \definecolor{mygreylink}{gray}{.40}
 \textheight=9.0in
@@ -24,15 +21,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{0.375in}
 \addtolength{\textwidth}{0.5in}
 \addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{0.75in}
 
-%-----------------------------------------------------------
-%Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
@@ -45,25 +39,20 @@
 \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
 		\textit{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
 
 \begin{document}
 
 \newcommand{\mywebheader}{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{\LARGE Jack Frysinger} &
-	\\
-	\textbf{Local:} 1155 Tremont Street, Roxbury Crossing, MA 02120 &
+	\\\textbf{Local:} 1155 Tremont Street, Roxbury Crossing, MA 02120 &
 	\\\textbf{Permanent:} 59 Obed Heights, Old Saybrook, CT 06475 &
-	\\
-	\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys}
+	\\\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys}
 	\end{tabular*}
-\\
-\vspace{0.1in}}
+	\\\vspace{0.1in}}
 
 \mywebheader
 
-%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 	\begin{itemize}[leftmargin=*]
 		\item[]
@@ -82,7 +71,7 @@
 				\resitem{\textbf{Advanced Courses:} Advanced Placement (AP) Chemistry, AP Computer Science, AP Calculus AB, AP Statistics, University of Connecticut ECE General Physics, AP Language, AP Literature, AP U.S. Government \& Politics}
 				\resitem{\textbf{Activities:} National Honor Society, Marine biology research trip to Utila, Honduras, 230+ volunteer hours}
 			\end{itemize}}
-	\end{itemize} % End Education list
+	\end{itemize}
 	
 \resheading{Computer Knowledge and Projects}
 {\small
@@ -94,7 +83,7 @@
 	
 \end{description}
 }
-%%%%%%%%%%%%%%%%%%%%%%
+
 \resheading{Experience}
 	\begin{itemize}[leftmargin=*]
 		\item[]
@@ -132,16 +121,12 @@
 					\resitem{Provided student perspective to administrative committee tasked with deploying technology services and products to faculty and students in the K-12 school district}
 					\resitem{Researched relevant services and products (e.g. \href{https://www.google.com/work/apps/education/}{Google Apps for Education}, \href{http://www.apple.com/education/it/vpp/}{Apple Volume Purchase Program}) and prepared to answer administrators' questions}
 				\end{itemize}}
-	\end{itemize}  % End Experience list
+	\end{itemize} 
 
-%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Extracurricular Activities and Interests}
 	\begin{description}
 		\item[] \hspace{0.03in} \textbf{Journalism and Writing:} { \footnotesize Editor of high school newspaper and literary magazine; accepted to \href{http://yaledailynews.com/about-us/sjp/}{Yale Daily News Summer Journalism Program}, August 2013; received \href{http://www.brown.edu/campus-life/support/bookstore/book-award}{Brown University Book Award}, May 2013}
 		\item[] \hspace{0.03in} \textbf{Music:} {\footnotesize Alto, tenor, and baritone saxophone player in jazz, concert, and musical pit band}
 		\item[] \hspace{0.03in} \textbf{Scouting:} {\footnotesize Eagle Scout, September 2013; Bronze Eagle Palm, January 2014}
-		
-	\end{description} % End Extracurriculars list
-	
-
+	\end{description}
 \end{document}
