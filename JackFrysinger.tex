@@ -42,14 +42,19 @@
 
 \begin{document}
 
-\newcommand{\mywebheader}{
+\newcommand{\myprintheader}[5]{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\LARGE Jack Frysinger} &
-	\\\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys}
+	\textbf{\LARGE Jack Frysinger} & \\\textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys} & #1--#2--#3 \\\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \href{mailto:#4{@}#5}{#4{@}#5}
 	\end{tabular*}
 	\\\vspace{0.1in}}
 
-\mywebheader
+\newcommand{\mywebheader}{
+	\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+		\textbf{\LARGE Jack Frysinger} & \\\textbf{LinkedIn:} \href{http://linkedin.com/in/jackfrys}{linkedin.com/in/jackfrys} & \textbf{GitHub:} \href{https://github.com/jackfrys}{github.com/jackfrys}
+	\end{tabular*}
+	\\\vspace{0.1in}}
+
+% here
 
 \resheading{Education}
 	\begin{itemize}[leftmargin=*]

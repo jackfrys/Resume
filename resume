@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+echo "Enter your 10-digit phone number and press [ENTER]: "
+read phoneNumber
+
+areaCode=${phoneNumber:0:3}
+townCode=${phoneNumber:3:3}
+number=${phoneNumber:(-4)}
+
+echo "Enter your email address and press [ENTER]: "
+read email
+
+host=${email%@*}
+domain=${email#*@}
+
+print='\\myprintheader{'$areaCode'}{'$townCode'}{'$number'}{'$host'}{'$domain'}'
+web='\\mywebheader'
+str="% here"
+
+mkdir print
+cp $1 print/$1
+cd print
+
+sed -i_bak -e "s/$str/$print/" $1
+pdflatex $1 > /dev/null
+cp *.pdf ../print.pdf
+
+cd ..
+rm -rf print
+
+mkdir web
+cp $1 web/$1
+cd web
+sed -i_bak -e "s/$str/$web/" $1
+pdflatex $1 > /dev/null
+cp *.pdf ..
+
+cd ..
+rm -rf web
