@@ -35,3 +35,5 @@ cp JackFrysinger.pdf ../JackFrysinger-web.pdf
 
 cd ..
 rm -rf web
+
+scp JackFrysinger-web.pdf $3@login.ccs.neu.edu:~/.www/JackFrysinger.pdf > /dev/null
