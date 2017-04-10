@@ -21,7 +21,7 @@ cd print
 
 sed -i_bak -e "s/$str/$print/" JackFrysinger.tex
 pdflatex JackFrysinger.tex > /dev/null
-cp JackFrysinger.pdf ../print.pdf
+cp JackFrysinger.pdf ../JackFrysinger-print.pdf
 
 cd ..
 rm -rf print
@@ -31,7 +31,7 @@ cp JackFrysinger.tex web/JackFrysinger.tex
 cd web
 sed -i_bak -e "s/$str/$web/" JackFrysinger.tex
 pdflatex JackFrysinger.tex > /dev/null
-cp JackFrysinger.pdf ..
+cp JackFrysinger.pdf ../JackFrysinger-web.pdf
 
 cd ..
 rm -rf web
