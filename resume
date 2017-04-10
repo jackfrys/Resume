@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-echo "Enter your 10-digit phone number and press [ENTER]: "
-read phoneNumber
+phoneNumber=$1
 
 areaCode=${phoneNumber:0:3}
 townCode=${phoneNumber:3:3}
 number=${phoneNumber:(-4)}
 
-echo "Enter your email address and press [ENTER]: "
-read email
+email=$2
 
 host=${email%@*}
 domain=${email#*@}
@@ -18,22 +16,22 @@ web='\\mywebheader'
 str="% here"
 
 mkdir print
-cp $1 print/$1
+cp JackFrysinger.tex print/JackFrysinger.tex
 cd print
 
-sed -i_bak -e "s/$str/$print/" $1
-pdflatex $1 > /dev/null
-cp *.pdf ../print.pdf
+sed -i_bak -e "s/$str/$print/" JackFrysinger.tex
+pdflatex JackFrysinger.tex > /dev/null
+cp JackFrysinger.pdf ../print.pdf
 
 cd ..
 rm -rf print
 
 mkdir web
-cp $1 web/$1
+cp JackFrysinger.tex web/JackFrysinger.tex
 cd web
-sed -i_bak -e "s/$str/$web/" $1
-pdflatex $1 > /dev/null
-cp *.pdf ..
+sed -i_bak -e "s/$str/$web/" JackFrysinger.tex
+pdflatex JackFrysinger.tex > /dev/null
+cp JackFrysinger.pdf ..
 
 cd ..
 rm -rf web
