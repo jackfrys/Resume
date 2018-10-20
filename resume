@@ -37,3 +37,4 @@ cd ..
 rm -rf web
 
 scp JackFrysinger-web.pdf $3@login.ccs.neu.edu:~/.www/JackFrysinger.pdf > /dev/null
+scp JackFrysinger-print.pdf $3@login.ccs.neu.edu:~/resume/JackFrysinger-print.pdf > /dev/null
