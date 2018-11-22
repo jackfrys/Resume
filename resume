@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-phoneNumber=$1
+phoneNumber=$PHONE
 
 areaCode=${phoneNumber:0:3}
 townCode=${phoneNumber:3:3}
 number=${phoneNumber:(-4)}
 
-email=$2
+email=$EMAIL
 
 host=${email%@*}
 domain=${email#*@}
@@ -36,5 +36,5 @@ cp JackFrysinger.pdf ../JackFrysinger-web.pdf
 cd ..
 rm -rf web
 
-scp JackFrysinger-web.pdf $3@login.ccs.neu.edu:~/.www/JackFrysinger.pdf > /dev/null
-scp JackFrysinger-print.pdf $3@login.ccs.neu.edu:~/resume/JackFrysinger-print.pdf > /dev/null
+scp JackFrysinger-web.pdf $SSH_DEPLOY@login.ccs.neu.edu:~/.www/JackFrysinger.pdf > /dev/null
+scp JackFrysinger-print.pdf $SSH_DEPLOY@login.ccs.neu.edu:~/resume/JackFrysinger-print.pdf > /dev/null
